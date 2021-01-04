@@ -1,0 +1,33 @@
+#wrap{}
+#header{}
+#section{}
+#footer{}
+
+/*********************header****************************/
+
+
+
+/*********************section****************************/
+
+/*sec2*/
+#sec2 {width: 100%; height: 73px;
+       border-bottom: 1px solid #E1E0E1;}
+#sec2 .inner{}/*sec2에 앱솔을 적용하면의 문제 : 가로사이즈가 찌그러져서(컨텐츠 사이즈로) 이너가 안 먹힘. width를 100% 줘야하고 min-width도 줘야함. 앱솔 주면 안됨*/
+#sec2 .notice{} 
+
+
+#sec2 .slide_box{float: left; height:20px;
+                 margin-top: 27px;
+                 margin-left: 223.478px;
+                 overflow:hidden;}
+#sec2 .notice .notice_list{position:relative;}
+#sec2 .notice .notice_list li {font-size: 14px;
+                               line-height:20px;
+                               color: #666;}
+#sec2 .notice .notice_list li:hover{text-decoration: underline;}
+
+#sec2 .notice .notice_list span.notice_tit {font-size: 16px;}
+
+
+
+/*********************footer****************************/
