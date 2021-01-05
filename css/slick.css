@@ -117,3 +117,81 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
+
+/*******************************************************/
+
+
+
+
+#sec1{clear:both;}
+#sec1 {position: relative;}
+#sec1 img{width: 100%; min-width:1200px; margin: 0 auto;}
+
+#sec1 .slick-arrow{position:absolute;z-index:9999;
+                   border: none;                    
+                    width: 40px;
+                    height: 40px;
+                    text-indent:-99999999px;
+                    cursor: pointer;}
+#sec1 .slick-prev{left:604px; bottom: 335px;
+                  background:url(../images/arrow_prev_wh.png);}
+#sec1 .slick-next{left:604px; bottom: 275px;
+                  background:url(../images/arrow_next_wh.png);}
+#sec1 .slick-dots {display: none;}
+
+
+
+
+
+
+#sec3 {position: relative;}
+#sec3 .inner {overflow: hidden;}
+#sec3 .center {width: 1150px;}
+#sec3 .center img{width: 365.34px; height: 116px;
+                  padding: 0 17.33px;
+                  opacity: 0.2;} 
+#sec3 .slick-dots li button {display: none;}
+#sec3 .slick-arrow {position: absolute;
+                    border: none;                    
+                    width: 40px;
+                    height: 40px;
+                    text-indent:-99999999px;
+                    z-index: 9999;
+                    cursor: pointer;}
+#sec3 .slick-prev{left: 375px; top: 38px;
+                  background:url(../images/arrow_prev.png)}
+#sec3 .slick-next{left: 780px; top: 38px;
+                  background:url(../images/arrow_next.png)}
+
+
+#sec4 {position: relative;}
+#sec4 .regular {width: 2000px;}
+#sec4 .slick-dots li button {display: none;}
+#sec4 .slick-arrow {position: absolute;
+                    border: none;                    
+                    width: 40px;
+                    height: 40px;
+                    text-indent:-99999999px;
+                    z-index: 9999;
+                    cursor: pointer;}                  
+#sec4 .slick-prev{left: 340px; top: 201px;
+                  background:url(../images/arrow_prev.png)}
+#sec4 .slick-next{left: 1540px; top: 201px;
+                  background:url(../images/arrow_next.png)}
+
+
+#sec6 .regular{position: absolute; left: 912px; top: 50px;
+               width: 2600px;}
+#sec6 .slick-dots li button {display: none;}
+#sec6 .slick-arrow {position: absolute;
+                   border: none;                    
+                   width: 40px;
+                   height: 40px;
+                   text-indent:-99999999px;
+                   z-index: 9999;
+                   cursor: pointer;}  
+#sec6 .slick-prev{left: -197px; bottom: 128px;
+                    background:url(../images/arrow_prev_wh.png)}
+#sec6 .slick-next{left: -147px; bottom: 128px;
+                    background:url(../images/arrow_next_wh.png)}
+  

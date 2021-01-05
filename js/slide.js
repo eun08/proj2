@@ -10,18 +10,17 @@ $(function(){
         dots: true,
         infinite: true,
         centerMode: true,
-        slidesToShow: 5,
-        slidesToScroll: 3
+        slidesToShow: 3,
+        slidesToScroll: 1
       });
-
-
 
 
     $(".regular").slick({
         dots: true,
         infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 3
+        slidesToShow: 5,
+        slidesToScroll: 1
+        
       });  
 
 })//jq
