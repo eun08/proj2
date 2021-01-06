@@ -47,13 +47,13 @@ button{outline:0}
 h2 {font-family: 'Noto Serif KR', serif; color: #fff; font-size: 56px; font-weight: 400;}
 h3 {font-family: 'Arita-buri-SemiBold';}
 .sound_only{display: block; text-indent: -999999999px; height: 0;}
-.inner {width: 1200px; margin: 0 auto; 
-        min-width: 1200px;}
+.inner {width: 1200px; margin: 0 auto;}
 
          
 
 /*************header*************/
-#wrap {overflow: hidden;}
+#wrap {overflow: hidden;
+       min-width: 1200px;}
 #header {border-bottom: 1px solid #E1E0E1;}
 
 

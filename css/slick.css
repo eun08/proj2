@@ -125,7 +125,7 @@
 
 #sec1{clear:both;}
 #sec1 {position: relative;}
-#sec1 img{width: 100%; min-width:1200px; margin: 0 auto;}
+#sec1 img{width: 1920px; min-width:1200px; margin: 0 auto;}
 
 #sec1 .slick-arrow{position:absolute;z-index:9999;
                    border: none;                    
