@@ -29,10 +29,9 @@
 #sec1 {}
 #sec1 .inner {position: absolute; left: 360px;
               z-index: 99999; text-align: left;}
-#sec1 .slider_01 {position: absolute; left: 0; top: 100px;
-                  }
+#sec1 .slider_01 h2.on {position: absolute; left: 0; top: 100px;}
 
-#sec1 .slider_02 {position: absolute; left: 0; top: 150px; 
+#sec1 .slider_02 h2 {position: absolute; left: 0; top: 150px; 
                   display: none;}
 #sec1 .slider_btn_viewmore {position: absolute; left: 0; top: 420px;
                            display: inline-block;
@@ -112,8 +111,10 @@
 #sec3 .prod_cont .cont_box a{color:#666; line-height: 28px;}
 #sec3 .prod_cont .cont_box a:before{content:''; display: block; 
                                    width: 42.5px; height: 2px; background-color:#666;
-                                   position: absolute; left: 179px; bottom: 90px;
-                                   }
+                                   position: absolute; left: 179px; bottom: 90px;}
+
+
+/*sec4*/
 
 
 
@@ -155,21 +156,30 @@
 #sec6 {margin-top: 50px;
        margin-bottom: 200px;
        position: relative;}
+
+#sec6 .gallery_side{position: absolute; left: 360px; top: 112px;}
+
 #sec6:afrer{content:''; display: block; clear: both;}      
 
-#sec6 .gallery_name{position: absolute; left: 0; top: 0;
-                    font-size: 18px; color:#E0C799; 
+#sec6 .gallery_name{font-size: 18px; color:#E0C799; 
                     font-weight: 700;
                     font-family:'Nanum Gothic', sans-serif;}
-#sec6 .gallery_txt{position: absolute; left: 0; top: 100px;
+#sec6 .gallery_txt{margin-top: 25px;
                    font-size: 36px; line-height: 41px; color: #fff;
                    font-weight: 400;
                    font-family: 'Nanum Myeongjo', serif;}
-#sec6 .btn_viewmore{position: absolute; left: 0; top: 0;}
+#sec6 .btn_viewmore{position: absolute; left: 360px; bottom: 112px;
+                   display: inline-block;
+                   line-height: 45px;                     
+                    border-bottom: 3px solid #fff;}
+#sec6 .btn_viewmore a {font-size: 15px;     
+                      font-weight: 800;
+                      line-height: 17px;
+                      color: #fff;
+                      font-family:'Nanum Gothic', sans-serif;}
 
 
 /*sec7*/
 #sec7 .btn_viewmore{margin-bottom: 200px;}
 
 
-/*********************footer****************************/
