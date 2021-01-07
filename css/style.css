@@ -28,15 +28,14 @@
 /*sec1*/
 #sec1 {}
 #sec1 .inner {position: absolute; left: 360px;
-              z-index: 99999; text-align: left;}
-#sec1 .slider_01 h2.on {position: absolute; left: 0; top: 100px;}
-
-#sec1 .slider_02 h2 {position: absolute; left: 0; top: 150px; 
-                  display: none;}
-#sec1 .slider_btn_viewmore {position: absolute; left: 0; top: 420px;
+               text-align: left;}
+#sec1 h2.slider_01{position: absolute; left: 360px; top: 100px;}
+#sec1 h2.slider_02{position: absolute; left: 360px; top: 150px;}
+#sec1 .slider_btn_viewmore {position: absolute; left: 360px; top: 420px;
                            display: inline-block;
                            line-height: 45px;                     
                            border-bottom: 3px solid #fff;
+                           z-index: 99999999;
                            }
 #sec1 .slider_btn_viewmore a {font-size: 15px;     
                              font-weight: 800;
@@ -47,8 +46,7 @@
 /*sec2*/
 #sec2 {width: 100%; height: 73px;
        border-bottom: 1px solid #E1E0E1;}
-#sec2 .inner{}
-#sec2 .notice{} 
+
 
 #sec2 .slide_box{float: left; height:20px;
                  margin-top: 27px;
@@ -87,7 +85,7 @@
 #sec3 .prod_cont li img {height: 400px; transition: 1s;}
 #sec3 .prod_cont li img:hover {transform: scale(1.1);}
 
-#cont1-2, #cont1-3, #cont1-4, #cont1-5, #cont1-6 {display: none;}
+
 
 
 #sec3 .prod_cont .cont_box {height: 322px;
@@ -117,6 +115,20 @@
 /*sec4*/
 
 
+#sec4 .new_prod { width: 324px; height: 442px;            
+                  background-color: rgba(255,255,255,0.9);
+                  position: absolute; left: 0; top: 0;
+                  opacity: 0;
+                  transition: opacity 0.2s;}
+#sec4 .new_prod:hover{opacity: 1;}
+
+#sec4 .new_prod .new_txt {padding: 173px 30px;}                 
+#sec4 .new_prod .new_txt .brand_name {font-size:14px; line-height: 15px;
+                                     font-weight: 800; color: #E0C799;
+                                     font-family: 'Nanum Gothic', sans-serif;}
+#sec4 .new_prod .new_txt .goods_name {font-size:18px; line-height: 26px;}
+#sec4 .new_prod .new_txt .goods_txt {font-size:14px; line-height: 20px;
+                                     color: #4C4D4E;}
 
 /*sec5*/
 #sec5 {margin-bottom: 180px;}
@@ -128,8 +140,19 @@
 #sec5 .event li:last-child{margin-right: 0;}
 #sec5 .event span {display: inline-block;
                    height: 188px;
-                   overflow: hidden;}                
-#sec5 .event li img{width: 100%; transition: 1s;}
+                   overflow: hidden;
+                   position: relative;
+                   transition: 1s;}
+#sec5 .event span:before {content:''; display: block; 
+                           width: 100%; height: 100%;
+                           position: absolute; top: 0; left: 0;                           
+                           background-color:rgba(31,31,31,0.2);
+                           opacity: 0;
+                           transition: opacity 0.5s;} 
+                           
+#sec5 .event span:hover::before {opacity: 1;}                            
+
+#sec5 .event li img{width: 100%; transition: 0.5s;} 
 #sec5 .event li img:hover{transform:scale(1.1);}
 #sec5 .txt_box {text-align: left;
                 margin-top: 30px;}

@@ -63,39 +63,70 @@ h3 {font-family: 'Arita-buri-SemiBold';}
             z-index: 99999999999;
             outline: 1px solid #ddd;
             display: none;}
-#wrap #pop p {}
 
 
-#wrap .all_menu {width: 16px; height: 16px;
-            position: absolute;
-             top: 70px; right: 350px;
-             z-index: 9999999999999;
-             cursor: pointer;}
-#wrap .all_menu span {position: absolute;
-                 width: 100%; height: 3px;
-                 background-color: #222222;
-                 transition: all .1s ease-in-out;
-                 -webkit-transition: all .2s ease-in-out;} 
 
-#wrap .all_menu span:nth-child(1){top: 0px;}
-#wrap .all_menu span:nth-child(2){top: 7px;}
-#wrap .all_menu span:nth-child(3){top: 14px;}
 
-#wrap .all_menu.on span{background-color: #fff;}
-#wrap .all_menu.on span:nth-child(1){top: 7px;
-                               transform: rotate(45deg);}
-#wrap .all_menu.on span:nth-child(2) {top: 7px; width: 0;}
-#wrap .all_menu.on span:nth-child(3) {top: 7px; 
-                                 transform: rotate(-45deg);}
 
 
 /**menu_box****/
-#wrap .menu_box {position: absolute;
+#wrap #menu_box {position: fixed;
     top: 0; right: 0;
     width: 100%; height: 100%;
     background:rgba(0,0,0,0.3);
-    z-index: 999999999;
+    z-index: 999999;
     display: none;}
+
+#menu_box .side_box {position: absolute;
+                 top: 0; right: -1290px;
+                 width: 1290px; height: 100%;
+                 background-color: #2D2D2D;
+                 z-index: 999999;
+                 display: block;
+                 }
+#menu_box .side_box .side_box_close {width: 100%; height: 70px;}                
+#menu_box .side_box .side_box_close p{position: absolute; top: 25px; right: 35px; 
+                                      display: inline-block; width: 30px; height: 30px; 
+                                      margin-bottom: 25px;}
+#menu_box .side_box .side_box_close img{width: 100%; height: 100%;
+                                        cursor: pointer;}
+#menu_box .side_box .box_cont {margin: 0 130px 70px;} 
+#menu_box .side_box .box_cont .sitemap_tit{color:#BEA36B;
+                                           font-size: 30px; line-height: 60px;
+                                           letter-spacing: 2px;
+                                           font-family: 'Noto Serif KR', serif;
+                                           border-bottom: 1px solid #BEA36B;} 
+#menu_box .side_box .box_cont .sitemap_tit p{margin-left: 10px;}                                                      
+#menu_box .side_box .box_cont .depth1 {color:#BEA36B; font-size: 17px;
+                                       border-bottom: 1px solid rgba(191,191,191,0.2)}
+#menu_box .side_box .box_cont .depth1:last-child{border-bottom: none;}                                        
+#menu_box .side_box .box_cont .depth1 > a {display: inline-block;
+                                           margin-left: 10px; margin-top: 30px;
+                                           float: left;
+                                           width: 180px; }
+
+#menu_box .side_box .box_cont .depth1::after{content:''; display: block; clear: both;}
+#menu_box .side_box .box_cont .depth2 {display: inline-block;
+                                       font-size: 15px;}       
+#menu_box .side_box .box_cont .depth2 li {float: left; width: 140px;
+                                          color:#E2E2E2; }
+                                     
+#menu_box .side_box .box_cont .depth2 ul > li {float: none;}
+#menu_box .side_box .box_cont .depth2 > li > a {display: inline-block;
+                                               margin-top: 30px; margin-bottom: 25px;}
+#menu_box .side_box .box_cont .depth2 .depth3 {font-weight: 200; }
+#menu_box .side_box .box_cont .depth2 .depth3 > li > a {display: inline-block; margin-bottom: 13px;}
+
+#menu_box .side_box .box_cont #product .depth2 > li {display: inline-block;
+                                                      width: 280px;}
+#menu_box .side_box .box_cont #product .depth2 > li > a {display: block;}    
+
+#menu_box .side_box .box_cont #product .depth2 .import {float: right; width: 140px;}
+#menu_box .side_box .box_cont #product .depth3 {float: right;}
+#menu_box .side_box .box_cont #product .import .depth3{float: left;}
+
+ 
+                                     
 
 
 
@@ -107,6 +138,7 @@ h3 {font-family: 'Arita-buri-SemiBold';}
 #header .nav_top .global_btn li {float: left;                                
                                 cursor: pointer;
                                 color: #888;}
+#header .nav_top .global_btn li.on {color: #030303;}                                
 #header .nav_top .global_btn li:before {content:'·'; display: inline-block;                                                                              
                                        margin: 0 6px;
                                        transform: translateY(3px);}
@@ -135,7 +167,7 @@ h3 {font-family: 'Arita-buri-SemiBold';}
                      background-size: cover;
                      z-index: 999;}
 #header .nav_bottom .top_icon {position: absolute;                               
-                               top: 0; right: 18.5px;
+                               top: 0; right: 0;
                                line-height: 70px;
                                z-index: 999;
                                }
@@ -144,17 +176,39 @@ h3 {font-family: 'Arita-buri-SemiBold';}
                                             transform:translateY(-4px);} 
 #header .nav_bottom .top_icon .search img {width: 16px; height: 16px;                                           
                                            transform:translateY(-4px);}
-#header .nav_bottom .top_icon > span {display: inline-block;
+#header .nav_bottom .top_icon span.bar {display: inline-block;
                                       width: 2.5px; height: 12px;
                                       background-color: #D1D1D1;
                                       margin: 0 20px;}
-
+#header .all_menu {float: right; padding-top: 25px;
+                    width: 18px; height: 16px;
+                     line-height: 3px;
+                      cursor: pointer;}
+ #header .all_menu > div {position: relative;}                       
+#header .all_menu span {display: inline-block;
+                        position: absolute; 
+                        right: 0; bottom: 60px;
+                        width: 100%; height: 3px;
+                         background-color: #222222;
+                          transition: all .1s ease-in-out;
+                           -webkit-transition: all .2s ease-in-out;} 
+                         
+#header .all_menu span:nth-child(1){top: 0px;}
+#header .all_menu span:nth-child(2){top: 7px;}
+#header .all_menu span:nth-child(3){top: 14px;}
+                         
+#header .all_menu.on span{background-color: #fff;}
+#header .all_menu.on span:nth-child(1){top: 7px;
+                                       transform: rotate(45deg);}
+#header .all_menu.on span:nth-child(2) {top: 7px; width: 0;}
+#header .all_menu.on span:nth-child(3) {top: 7px; 
+                                        transform: rotate(-45deg);}
 
 
 
 /*************네비******************/
 
-      #header #nav{clear: both;}
+      #header #nav{clear: both;position: relative;}
       #nav {}                     
       #nav .inner{width: 100%;
                   text-align: center;}
@@ -164,10 +218,10 @@ h3 {font-family: 'Arita-buri-SemiBold';}
                          padding: 0 25px; height: 70px;
                          }
       
-      #nav .depth1 > li > a {font-size: 15px;
+      #nav .depth1 > li > a {font-size: 16px;
                              line-height: 70px;
                               color: #444444; 
-                              font-weight: 400;
+                              font-weight: 500;
                               position: relative;}
       #nav .depth1 li > a.point:before{content:''; display: block;
                                   width: 100%; height: 2px; background-color: #EC008C;
@@ -198,12 +252,12 @@ h3 {font-family: 'Arita-buri-SemiBold';}
                             margin: 0 25px;
                             margin-top: 40px;
                             margin-bottom: 20px;
-                            font-size: 14px;
+                            font-size: 15px;
                             line-height: 20px;
-                            font-weight: 500;
+                            font-weight: 400;
                             }
       #nav .depth2 > li > ul {margin: 0 auto;}                  
-      #nav .depth2 > li > ul > li{font-size: 13px;
+      #nav .depth2 > li > ul > li{font-size: 14px;
                                   line-height: 19px;
                                   color: #666;}
       

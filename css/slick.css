@@ -124,22 +124,19 @@
 
 
 #sec1{clear:both;}
-#sec1 {position: relative;}
 #sec1 img{width: 1920px; min-width:1200px; margin: 0 auto;}
-
-#sec1 .slick-arrow{position:absolute;z-index:9999;
+#sec1 .slick-active{position: relative;}
+#sec1 .slick-arrow{position:absolute;z-index:999;
                    border: none;                    
                     width: 40px;
                     height: 40px;
-                    text-indent:-99999999px;
+                    text-indent:-99999px;
                     cursor: pointer;}
 #sec1 .slick-prev{left:604px; bottom: 335px;
                   background:url(../images/arrow_prev_wh.png);}
 #sec1 .slick-next{left:604px; bottom: 275px;
                   background:url(../images/arrow_next_wh.png);}
 #sec1 .slick-dots {display: none;}
-
-
 
 
 
@@ -166,6 +163,7 @@
 
 #sec4 {position: relative;}
 #sec4 .regular {width: 2000px;}
+#sec4 .slick-slide {position:relative;}
 #sec4 .slick-dots li button {display: none;}
 #sec4 .slick-arrow {position: absolute;
                     border: none;                    
@@ -180,22 +178,7 @@
                   background:url(../images/arrow_next.png)}
 
 
-#sec4 div.off{display: none;}   
-#sec4 div.on {position: absolute; left: 0; bottom: 0;
-              width: 324px; height: 442px; background-color:rgba(255,255,255,0.9);
-              z-index: 9999999999;
-              transform:translateY(-5px);}
-          
-#sec4 div.on > a {display: inline-block;
-                padding: 173.04px 30.25px;}
 
-#sec4 div.on .brand_name {font-size: 14px; line-height: 16px;
-                      font-weight: 800;
-                      font-family: 'Nanum Gothic', sans-serif;}
-#sec4 div.on .goods_name {font-size: 18px; line-height: 26px;
-                      margin-bottom: 12px;}
-#sec4 div.on .goods_txt {font-size: 14px; line-height: 20px;
-                            color: #4C4D4E;}
 
 
 #sec6 .regular{position: absolute; left: 912px; top: 50px;
@@ -214,3 +197,8 @@
 #sec6 .slick-next{left: -147px; bottom: 128px;
                     background:url(../images/arrow_next_wh.png)}
   
+
+
+
+
+
