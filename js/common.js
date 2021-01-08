@@ -28,7 +28,14 @@ $(function(){
    })
 
 
-   
+   $('.toTop_btn').hover(function(){      
+       $('.toTop_btn span.toTop_btn_off').animate({'bottom':'50px'},300);
+       $('.toTop_btn span.toTop_btn_on').animate({'bottom':'15px'},300);
+   },function(){   
+    $('.toTop_btn span.toTop_btn_off').animate({'bottom':'15px'},300);
+    $('.toTop_btn span.toTop_btn_on').animate({'bottom':'-17px'},300);
+   })
+
 
 
 

@@ -71,53 +71,13 @@ h3 {font-family: 'Arita-buri-SemiBold';}
 
 
 
-/**탑스크롤버튼****/
 
 
-#toTop {position: fixed; right: 20px; bottom: 314px;}
-#toTop button{border: none; background: none; cursor: pointer;
-              text-indent: -9999999999px;
-              }
-
-#toTop .toTop_btn {width: 40px; height: 40px;
-                  background-color:#232323;
-                  border-radius: 50%;
-                  position: absolute; bottom: 0; right: 2px;                  
-                  z-index: 999999999;}
-     
-
-#toTop .toTop_btn span{position: absolute; bottom: 15px; right: 9px;}
-#toTop .toTop_btn span:before{content:''; display: block;
-                                            width: 0;
-                                            border: 10px solid #fff;
-                                            position: absolute;
-                                            right:  0px; bottom:  0px;}
-#toTop .toTop_btn span:after{content:''; display: block;
-                                           width: 0;
-                                           border: 6px solid #232323;
-                                           right: 4px; bottom: 0px;
-                                           position: absolute;}
-                                     
-#toTop .toTop_btn span:before{border-left-color: transparent;
-                                      border-top-color: transparent;
-                                      border-right-color: transparent;}
-#toTop .toTop_btn span:after{border-left-color: transparent;
-                                       border-top-color: transparent;
-                                       border-right-color: transparent;}                                            
-
-
-
-
-
-
-
-
-
-/**사이트맵****/
+/**menu_box****/
 #wrap #menu_box {position: fixed;
                  width: 100%; height: 100%;
                  background:rgba(0,0,0,0.4);
-                 z-index: 999999999999;
+                 z-index: 999999;
                   display: none;}
 
 #menu_box .side_box {position: absolute;
@@ -171,7 +131,7 @@ h3 {font-family: 'Arita-buri-SemiBold';}
  
                                      
 
-/**헤더****/
+
 
 
 #header {border-bottom: 1px solid #E1E0E1;}
@@ -269,7 +229,7 @@ h3 {font-family: 'Arita-buri-SemiBold';}
       #nav .depth1 li > a.point:before{content:''; display: block;
                                   width: 100%; height: 2px; background-color: #EC008C;
                                   position: absolute; bottom: -24px;
-                                  z-index:9999999999;}                       
+                                  z-index:999;}                       
                                    
       #nav .nav_box{width: 100%;
                     position: absolute; top: 71px; left: 0;
