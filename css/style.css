@@ -106,10 +106,11 @@
                                       margin-bottom: 30px;}
 #sec3 .prod_cont .cont_box .cont_txt{font-size: 14px; color:#666;
                                      margin-bottom: 50px;}
-#sec3 .prod_cont .cont_box a{color:#666; line-height: 28px;}
+#sec3 .prod_cont .cont_box a{color:#666; line-height: 28px;
+                             position: relative;}
 #sec3 .prod_cont .cont_box a:before{content:''; display: block; 
-                                   width: 42.5px; height: 2px; background-color:#666;
-                                   position: absolute; left: 179px; bottom: 90px;}
+                                   width: 100%; height: 2px; background-color:#666;
+                                   position: absolute; left: 0; bottom: -2px;}
 
 
 /*sec4*/
