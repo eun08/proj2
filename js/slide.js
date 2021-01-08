@@ -2,20 +2,13 @@ $(function(){
 
   // slickslider
 
-    $(".lazy").slick({
+    $("#sec1 .lazy").slick({
         lazyLoad: 'ondemand', // ondemand progressive anticipated
         infinite: true
       });
       
 
-    $(".center").slick({
-        dots: true,
-        infinite: true,
-        centerMode: true,
-        slidesToShow: 3,
-        slidesToScroll: 1
-      });
-
+  
 
     $(".regular").slick({
         dots: true,
@@ -26,12 +19,11 @@ $(function(){
       });  
 
 
-     // flexslider
-
       
-        SyntaxHighlighter.all();
-      });
-      $(window).load(function(){
+     // flexslider      
+        
+   
+      
         $('#carousel').flexslider({
           animation: "slide",
           controlNav: false,
