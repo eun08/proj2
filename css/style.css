@@ -139,6 +139,7 @@
                 width:376px;
                 margin-right: 36px;}
 #sec5 .event li:last-child{margin-right: 0;}
+#sec5 .event .event_img_box {width: 376px; height: 188px; outline: 1px solid red;}
 #sec5 .event span {display: inline-block;
                    height: 188px;
                    overflow: hidden;
@@ -154,7 +155,7 @@
 #sec5 .event span:hover::before {opacity: 1;}                            
 
 #sec5 .event li img{width: 100%; transition: 0.5s;} 
-#sec5 .event li img:hover{transform:scale(1.1);}
+/*#sec5 .event li img:hover{transform:scale(1.1);}*/
 #sec5 .txt_box {text-align: left;
                 margin-top: 30px;}
 #sec5 .txt_box p.event_group{font-size: 14px;

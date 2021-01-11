@@ -161,19 +161,15 @@ h3 {font-family: 'Arita-buri-SemiBold';}
 #header .nav_top .global_btn li > a:hover::after{width: 100%;}
 
 
-#header .nav_bottom {}         
-#header .nav_bottom .inner {height: 70px; position: relative;}
-#header h1.nav_logo {position: absolute;
-                     top: 18px; left: 0;                     
+#header .nav_bottom { position: relative;}         
+#header .nav_bottom > .inner {height: 70px; }
+#header h1.nav_logo {float: left; margin-top: 20px;        
                      width: 190px; height: 33px;                     
                      background:url(../images/logo_color.png) no-repeat;
                      background-size: cover;
-                     z-index: 999;}
-#header .nav_bottom .top_icon {position: absolute;                               
-                               top: 0; right: 0;
-                               line-height: 70px;
-                               z-index: 999;
-                               }
+                     }
+#header .nav_bottom .top_icon {float: right;
+                               line-height: 70px;}
 #header .nav_bottom .top_icon .account img {width: 17px; height: 20px;
                                             margin-right: 6px;                                            
                                             transform:translateY(-4px);} 
@@ -210,45 +206,52 @@ h3 {font-family: 'Arita-buri-SemiBold';}
 
 
 /*************네비******************/
-
-      #header #nav{clear: both;position: relative;}
-      #nav {}                     
-      #nav .inner{width: 100%;
+      #header {position: relative;}
+      #header #nav{clear: both;}                      
+      #nav .inner{width: 100%; 
                   text-align: center;}
       #nav .depth1 {display: inline-block;                    
-                    height: 70px;}
+                    height: 70px;
+                    }
+
       #nav .depth1 > li {display: inline-block;
                          padding: 0 25px; height: 70px;
                          }
-      
-      #nav .depth1 > li > a {font-size: 16px;
+     
+                                    
+      #nav .depth1 > li > a {font-size: 16px; 
+                             display: inline-block; height: 70px;
                              line-height: 70px;
                               color: #444444; 
                               font-weight: 500;
-                              position: relative;}
+                              position: relative;
+                              border-bottom:1px solid blue ;}
       #nav .depth1 li > a.point:before{content:''; display: block;
                                   width: 100%; height: 2px; background-color: #EC008C;
-                                  position: absolute; bottom: -24px;
+                                  position: absolute; bottom: 0;
                                   z-index:999;}                       
-                                   
+      #nav .depth1 > li > a:after {content: ''; display: block; clear: both;
+                                   border-bottom:1px solid #E2E2E2 ; 
+                                   position:absolute; left: -25px; bottom: -1px; width:calc(100% + 60px);}
+
       #nav .nav_box{width: 100%;
                     position: absolute; top: 71px; left: 0;
-                    width: 100%; background-color:#fff;;
+                    background-color:#fff;;
                      z-index: 999999999;
                      display: none;
                      }
       #nav .depth1 > li:hover a.tit_bg{color:#EC008C;}                                      
       #nav .depth1 > li:hover .nav_box{display: block;transition: 0.5s;}
 
-      #nav .depth1 .tit_bg:hover {}
+     
                      
-      #nav .nav_box .depth2{width: 980px; margin: 0 auto; position: relative;/*relative는 밑의 선디자인 때문임*/ 
+      #nav .nav_box .depth2{width: 100%; margin: 0 auto; position: relative;
                             background-color: #fff;
                              padding-top: 10px;}           
-      #nav .nav_box .depth2:afrer{content: ''; display: block; clear: both;}
+      
                                                
       #nav .depth2 > li{width: auto; display: inline-block;
-                        text-align: left;}
+                        text-align: left; vertical-align: top;}
     
                                          
       #nav .depth2 > li > a{display: block;
