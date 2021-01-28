@@ -132,10 +132,25 @@
                     height: 40px;
                     text-indent:-99999px;
                     cursor: pointer;}
-#sec1 .slick-prev{left:604px; bottom: 335px;
+
+#sec1 .slick-prev{left:358px; bottom: 240px;
                   background:url(../images/arrow_prev_wh.png);}
-#sec1 .slick-next{left:604px; bottom: 275px;
+#sec1 .slick-prev:after{content:''; display: block; 
+                    width: 40px; height: 40px;
+                    border: 2px solid rgba(255,255,255,0.5);
+                    border-radius: 50%;
+                    position: absolute; 
+                    top: -1px; left: -1px;}
+
+#sec1 .slick-next{left:408px; bottom: 240px;
                   background:url(../images/arrow_next_wh.png);}
+#sec1 .slick-next:after{content:''; display: block; 
+                        width: 40px; height: 40px;
+                        border: 2px solid rgba(255,255,255,0.5);
+                        border-radius: 50%;
+                        position: absolute; 
+                        top: -1px; left: -1px;} 
+
 #sec1 .slick-dots {display: none;}
 
 
@@ -171,11 +186,24 @@
                     height: 40px;
                     text-indent:-99999999px;
                     z-index: 9999;
-                    cursor: pointer;}                  
+                    cursor: pointer;} 
+                                   
 #sec4 .slick-prev{left: 340px; top: 201px;
                   background:url(../images/arrow_prev.png)}
+#sec4 .slick-prev:after {content:''; display: block; 
+                    width: 40px; height: 40px;
+                    border: 2px solid rgba(255,255,255,0.5);
+                    border-radius: 50%;
+                    position: absolute; 
+                    top: -1px; left: -1px;}
 #sec4 .slick-next{left: 1540px; top: 201px;
                   background:url(../images/arrow_next.png)}
+#sec4 .slick-next:after {content:''; display: block; 
+                    width: 40px; height: 40px;
+                    border: 2px solid rgba(255,255,255,0.5);
+                    border-radius: 50%;
+                    position: absolute; 
+                    top: -2px; left: -2px;}                  
 
 
 
